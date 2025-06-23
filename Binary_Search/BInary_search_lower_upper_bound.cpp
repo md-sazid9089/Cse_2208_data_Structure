@@ -5,7 +5,7 @@ int low=0;
 int high=n;
 while(low<high){
     int mid=(low+high)/2;
-    if(a[mid]>=x) high=mid;
+    if(a[mid]>=x) high=mid-1;
     else low=mid+1;
 }
 if(low<n && a[low]<x)low++;
