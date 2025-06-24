@@ -1,1 +1,3 @@
-# Cse_2208_data_Structure
+## Description
+
+This repository provides comprehensive resources for the CSE 2208 Data Structure course. Inside, you'll find lecture notes, study materials, and practical code examples designed to support your understanding of core data structures such as arrays, linked lists, stacks, queues, trees, and graphs. The content aims to facilitate both theoretical learning and hands-on implementation for students.
