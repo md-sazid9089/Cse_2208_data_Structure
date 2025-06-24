@@ -3,7 +3,7 @@
  int rotated(vector<int>&a,int target){
  int low=0;
  int high=a.size()-1;
- while(low<=high){
+ while(low<=high){s
     int mid=(low+high)/2;
     if(a[mid]==target) return mid;
     else if(a[low]<=a[mid]){

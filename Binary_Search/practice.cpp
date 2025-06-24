@@ -1,28 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
-int sqrt(vector<int>&a,int x){
-int low=0;
-int high=a.size()-1;
+int mySqrt(vector<int>&a,int x){
+long long low=0;
+long long high=x;
+int ans=0;
 while(low<=high){
     int mid=(low+high)/2;
-    if(mid*mid ==x) return mid;
-    else if(mid*mid<x) low=mid+1;
-    else high=mid+1;
+    if(mid*mid==x) return mid;
+    else if(mid*mid >x) high=mid-1;
+    else{
+        low=mid+1;
+        ans=mid;
+    }
 }
-return -1;
+return ans;
 }
 int main(){
 int n;
 cin>>n;
+cout<<endl;
 vector<int>a;
-for(int i=0;i<n;i++)
-{
+for(int i=0;i<n;i++){
     int x;
     cin>>x;
     a.push_back(x);
 }
-int x=16;
-int l=sqrt(a,x);
-if(l==-1)cout<<"not found"<<endl;
-else cout<<l<<endl;
+int x=4;
+int l=mySqrt(a,x);
+if(l==0) cout<<"not found"<<endl;
+else cout<<"the square is  "<<l<<endl;
+return 0;
 }
